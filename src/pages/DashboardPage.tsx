@@ -74,7 +74,7 @@ import {
  * counts them per benefit against that benefit's own top-5 base. Same rows,
  * different denominators, different question.
  */
-const SIDEBAR_KEY = "coke-eu:sidebar-collapsed";
+const SIDEBAR_KEY = "coke-africa:sidebar-collapsed";
 
 /**
  * ASP splits the page in two: "benefits" shows benefit rows with no platforms,

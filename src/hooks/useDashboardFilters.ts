@@ -18,7 +18,7 @@ const STORE_VERSION = "v1";
 const storeKey = () => {
   const region = getRegion() === "EU" ? "" : `:${getRegion()}`;
   const tab = isPlatformView() ? ":platform" : "";
-  return `coke-eu:dashboard:${STORE_VERSION}${region}${tab}:${getAccountId() ?? "anon"}`;
+  return `coke-africa:dashboard:${STORE_VERSION}${region}${tab}:${getAccountId() ?? "anon"}`;
 };
 
 function loadStored(): string | null {

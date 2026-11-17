@@ -12,12 +12,12 @@ import { getRegion } from "@/lib/region";
  * Keys are namespaced per app so a shared browser running both the stills
  * workbench and this dashboard does not cross-authenticate.
  */
-const AUTH_KEY = "coke-eu:auth";
-const EMAIL_KEY = "coke-eu:auth-email";
-const ACCOUNT_ID_KEY = "coke-eu:account-id";
-const SURVEYS_KEY = "coke-eu:surveys";
-const TOKEN_KEY = "coke-eu:token";
-const REGIONS_KEY = "coke-eu:regions";
+const AUTH_KEY = "coke-africa:auth";
+const EMAIL_KEY = "coke-africa:auth-email";
+const ACCOUNT_ID_KEY = "coke-africa:account-id";
+const SURVEYS_KEY = "coke-africa:surveys";
+const TOKEN_KEY = "coke-africa:token";
+const REGIONS_KEY = "coke-africa:regions";
 
 export interface AccountSurvey {
   id: number;
