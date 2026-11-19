@@ -143,6 +143,8 @@ export function MarketHeatmap({
                 slowed down scanning the thing people actually came for. */}
             <tfoot>
               <tr className="border-t">
+                {/* Keeps the counts under their markets when the platform column is on. */}
+                {showSub && <td className="nm" />}
                 <td className="nm sticky-col text-muted-foreground">Base (n)</td>
                 <td className="font-mono text-muted-foreground">
                   {formatCount(data.base_n)}
