@@ -200,6 +200,15 @@ export function FilterSidebar({
 
         {meta && !meta.subregions?.length && (
           <Group label="Market">
+            {/* "No market picked" is the whole OU; this makes it a button of its
+                own, lit when nothing else is, and clearing the picks when pressed. */}
+            <Chip
+              active={draft.demo.market.length === 0}
+              onClick={() => onSetDemo("market", [])}
+              title={`All ${meta.markets.length} markets`}
+            >
+              Total OU
+            </Chip>
             {meta.markets.map((m) => (
               <Chip
                 key={m.code}
