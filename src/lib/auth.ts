@@ -77,6 +77,7 @@ export function getAccountId(): string | null {
 const EXTENDED_PANEL_ACCOUNTS = new Set([
   "2", // devanathan.srinivasan@brand-scapes.com
   "5", // jaeyoung.lee@coca-cola.com
+  "59", // pmaina@coca-cola.com (Africa only: this app serves only /coke-africa)
 ]);
 
 export function hasExtendedPanels(): boolean {
