@@ -74,14 +74,13 @@ export function getAccountId(): string | null {
  * silently filter a standard account's whole dashboard to one class, with no
  * chip on screen to explain it and no way to clear it.
  */
-const EXTENDED_PANEL_ACCOUNTS = new Set([
-  "2", // devanathan.srinivasan@brand-scapes.com
-  "5", // jaeyoung.lee@coca-cola.com
-  "59", // pmaina@coca-cola.com (Africa only: this app serves only /coke-africa)
-]);
-
+/*
+ * Africa (the only dashboard this app serves) shows them to every account, at
+ * the client's request; it used to be an allowlist of account ids. Need-states
+ * stay EU-only through hasNeedStates below.
+ */
 export function hasExtendedPanels(): boolean {
-  return EXTENDED_PANEL_ACCOUNTS.has(getAccountId() ?? "");
+  return true;
 }
 
 /** Need-state segments (panel, filter chips and the segment URL params) are
